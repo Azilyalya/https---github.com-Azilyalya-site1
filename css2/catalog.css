@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    color: black;
+    font-family: "unb";
+    box-sizing: border-box;
+}
+
+/* font */
+@font-face {
+    font-family: "unb";
+    src: url(../assets/fonts/Unbounded-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "unb";
+    src: url(../assets/fonts/Unbounded-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "unb";
+    src: url(../assets/fonts/Unbounded-Regular.ttf);
+    font-weight: 400;
+}
+
+
+/*общее */
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-100 {
+    padding-top: 100px;
+}
+
+.top-200{
+    padding-top: 200px;
+}
+
+.btn-100 {
+    padding-bottom: 100px;
+}
+
+.btn-200{
+    padding-bottom: 200px;
+}
+
+.zagolovok{
+    text-align: center;
+    padding: 50px 0px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #283618;
+    font-size: 50px;
+    
+}
+
+
+/* header */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+header img{
+    height: 40px;
+}
+
+a img{
+    height: 30px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    transition: .2s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transition: .2s;
+}
+
+/* catalog */
+.name-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.filter{
+    display: flex;
+    gap: 20px; 
+}
+
+.filter p{
+    cursor: pointer;
+    
+}
+
+.filter p:hover{
+    text-decoration: underline;
+    
+    transition: .7s;
+    
+}
+
+.name{
+   
+    font-size: 30px;
+}
+
+.tovar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.tovar-img{
+    height: 360px;
+    width: 240px;
+    display: block;
+    background-size: cover;
+    cursor: pointer;
+    border-top: 2px solid #283618;
+    border-bottom: 1px solid #283618;
+    margin: 0 auto;
+}
+
+.transition{
+    transition:.2s ;
+}
+
+
+.tovar-img-1{
+    background-image: url(../assets/img/catalog2/ct1.jpg);
+    
+}
+.tovar-img-1:hover{
+    background-image: url(../assets/img/catalog2/ct11.jpg);
+}
+
+.tovar-img-2{
+    background-image: url(../assets/img/catalog2/ct2.jpg);
+    
+}
+.tovar-img-2:hover{
+    background-image: url(../assets/img/catalog2/ct22.jpg);
+}
+
+
+.tovar-img-3{
+    background-image: url(../assets/img/catalog2/ct3.jpg);
+    
+}
+.tovar-img-3:hover{
+    background-image: url(../assets/img/catalog2/ct33.jpg);
+}
+
+.tovar-img-4{
+    background-image: url(../assets/img/catalog2/ct4.jpg);
+    
+}
+.tovar-img-4:hover{
+    background-image: url(../assets/img/catalog2/ct44.jpg);
+}
+
+.tovar-img-5{
+    background-image: url(../assets/img/catalog2/ct5.jpg);
+    
+}
+.tovar-img-5:hover{
+    background-image: url(../assets/img/catalog2/ct55.jpg);
+}
+
+.tovar-img-6{
+    background-image: url(../assets/img/catalog2/ct6.jpg);
+    
+}
+.tovar-img-6:hover{
+    background-image: url(../assets/img/catalog2/ct66.jpg);
+}
+
+.tovar-img-7{
+    background-image: url(../assets/img/catalog2/ct7.jpg);
+    
+}
+.tovar-img-7:hover{
+    background-image: url(../assets/img/catalog2/ct77.jpg);
+}
+
+.tovar-img-8{
+    background-image: url(../assets/img/catalog2/ct8.jpg);
+    
+}
+.tovar-img-8:hover{
+    background-image: url(../assets/img/catalog2/ct88.jpg);
+}
+
+.tovar-info{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-bottom: 2px solid #283618;
+}
+
+.tovar-info p{
+    font-size: 15px;
+}
+
+.tovar-info button{
+    padding: 8px 0;
+    border: 1px solid #283618;
+    background-color: #283618;
+    color: #FEFAE0;
+    cursor: pointer;
+   
+}
+
+.tovar-info button:hover{
+    background-color: #FEFAE0;
+    color: #283618;
+
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: #283618;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+footer h3{
+    color: white;
+}

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    color: black;
+    font-family: "unb";
+    box-sizing: border-box;
+}
+
+/* font */
+@font-face {
+    font-family: "unb";
+    src: url(../assets/fonts/Unbounded-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "unb";
+    src: url(../assets/fonts/Unbounded-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "unb";
+    src: url(../assets/fonts/Unbounded-Regular.ttf);
+    font-weight: 400;
+}
+
+
+/*общее */
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-100 {
+    padding-top: 100px;
+}
+
+.top-200{
+    padding-top: 200px;
+}
+
+.btn-100 {
+    padding-bottom: 100px;
+}
+
+.btn-200{
+    padding-bottom: 200px;
+}
+
+.zagolovok{
+    text-align: center;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #283618;
+    font-size: 50px;
+    
+}
+
+
+/* header */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+header img{
+    height: 40px;
+}
+
+a img{
+    height: 30px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    transition: .2s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transition: .2s;
+}
+
+/* banner */
+.banner{
+    background-image: url(../assets/img/banner/banner.png);
+    height: 600px;
+    background-size: cover;
+}
+
+.banner-content{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    
+}
+
+.banner a{
+    padding: 10px 20px;
+    border: 2px solid #283618;
+    color: #283618;
+    font-size: 30px;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.banner a:hover{
+    background-color: #283618;
+    color: white;
+}
+
+/* каталог */
+.slider {
+    width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slides {
+   gap: 50px;
+    display: flex;
+}
+
+.slide {
+    width: 27%;
+    height: 100%;
+    transition: .7s;
+}
+
+input[name="r"] {
+    display: none;
+}
+
+.navigation {
+    position: absolute;
+    left: 45%;
+    display: flex;
+    bottom: 15px;
+}
+
+.lab {
+    width: 30px;
+    height: 10px;
+    background-color: #ddd;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .4s;
+
+}
+
+.lab:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -75%;
+}
+
+#r5:checked ~ .s1 {
+    margin-left: -100%;
+}
+
+
+
+.carta{
+    height: 580px;
+    width: 330px;
+    
+    border: 1px solid #283618;
+    overflow: hidden;
+}
+
+.carta img{
+    width: 330px;
+    height: 500px;
+    border-bottom: 1px solid #283618;
+}
+
+.tovar-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background-color: #283618;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+footer h3{
+    color: white;
+}
